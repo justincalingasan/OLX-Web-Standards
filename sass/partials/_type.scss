@@ -1,0 +1,74 @@
+// Typography
+
+	body {
+		@extend .text-neutral;
+		font-family: $copy; 
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 23px;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	::selection {
+		@extend .background-subtle;
+	}
+
+	::-moz-selection {
+		@extend .background-subtle;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+		@extend .margin-0;
+		@extend .text-neutral;
+		line-height: 1.25em;
+		font-family: $copy; 
+		font-weight: bold;
+		// text-transform: uppercase;
+	}
+
+	h1 	{ font-size: 2.75rem; }
+	h2 	{ font-size: 2.313rem; }
+	h3 	{ font-size: 1.688rem; }
+	h4 	{ font-size: 1.438rem; }
+	h5 	{ font-size: 1.125rem; }
+	h6	{ font-size: 1rem; }
+	
+	p {
+		@extend .margin-0;
+		@extend .margin-top-10;
+		@extend .margin-bottom-20;
+		font-family: $copy;
+		font-style: normal;
+		font-weight: 300;
+		line-height: 23px;
+	}
+
+	// Horizontal Rule
+	hr {
+		@extend .margin-0;
+		@extend .margin-top-20;
+		@extend .margin-bottom-20;
+		background: #e7e7e7;
+		height: 1px;
+		border: none;
+	}
+
+	// Smalls and captions
+	small, figcaption, caption, .small, .figcaption, .caption { 
+		font-size: 0.75em; 
+		font-weight: 400;
+	}
+
+	// Strongs and Bolds 
+	strong, b, .strong, .bold { font-weight: bold; }
+
+	// Italics
+	em, .em { font-style: italic; }
+
+	@media only screen and (min-width: 40.063em) {
+		h1 	{ font-size: 2.125rem; }
+		h2 	{ font-size: 1.688rem; }
+		h3 	{ font-size: 1.375rem; }
+		h4 	{ font-size: 1.125rem; }
+	}

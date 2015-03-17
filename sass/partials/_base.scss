@@ -1,0 +1,42 @@
+// Base Rules
+
+	* { 
+		@include box-sizing(border-box); 
+
+		&:focus {
+			//outline: 1px solid $ash;
+		}
+	}
+	
+	html, body { 
+		@extend .margin-0;
+		@extend .padding-0;
+		@extend .background-white;
+	}
+
+	a { 
+		@include transition(color, 0.2s);
+		@extend .text-blue;
+		text-decoration: none;
+
+		&:hover { 
+			color: $blue + 20; 
+		}
+	}
+
+	a.white { @extend .text-white; }
+
+	img { @extend .valign-middle; }
+
+	p { overflow-wrap: break-word; }
+
+	figcaption {
+		@extend .padding-10;
+	}
+
+	table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+	
+

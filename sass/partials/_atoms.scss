@@ -1,0 +1,75 @@
+//Atoms
+
+//Button
+button, .button {
+	@include border-radius(3px);
+	@include transition(background, 0.2s);
+	@extend .padding-top-10;
+	@extend .padding-bottom-10;
+	@extend .padding-left-20;
+	@extend .padding-right-20;
+	@extend .display-inline-block;
+	@extend .background-blue;
+	@extend .text-white;
+
+	&.small {
+		@extend .padding-top-5;
+		@extend .padding-bottom-5;
+		@extend .padding-left-10;
+		@extend .padding-right-10;
+	}
+
+	&.tiny {
+		@extend .padding-0;
+		@extend .padding-left-10;
+		@extend .padding-right-10;
+		font-size: 80%;
+	}
+
+	&.full {
+		@extend .display-block;
+		@extend .text-center;
+	}
+
+	&:hover, &:focus {
+		@extend .text-white;
+		background: $blue + 20;
+	}
+
+	&.error {
+		@extend .background-error;
+		&:hover, &:focus { background: $error + 20;}
+	}
+
+	&.warning {
+		@extend .background-warning;
+		&:hover, &:focus { background: $warning + 20;}
+	}
+
+	&.success {
+		@extend .background-success;
+		&:hover, &:focus { background: $success + 20;}
+	}
+
+	&.neutral {
+		@extend .background-neutral;
+		&:hover, &:focus { background: $neutral + 20;}
+	}
+
+	&.disabled {
+		cursor: default;
+		@extend .background-disabled;
+		// &:hover, &:focus { background: $ash + 20;}
+	}
+
+	&.white {
+		@extend .background-white;
+		@extend .text-neutral;
+		border: 1px solid $ash;
+		&:hover, &:focus {
+			@extend .background-white;
+			@extend .text-neutral;
+			border: 1px solid $neutral;
+		}
+	}
+}
