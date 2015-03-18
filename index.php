@@ -5,6 +5,41 @@
 	</head>
 	<body>
 		<section class="row">
+			<h1>Grid</h1>
+			<div class="background-subtle text-center small-12">
+				.small-12
+			</div>
+			<div class="background-neutral text-center text-white small-12 medium-8">
+				.small-12 .medium-8
+			</div>
+			<div class="background-subtle text-center small-4 medium-6">
+				.small-4 .medium-6
+			</div>
+			<div class="background-neutral text-center text-white small-4 medium-6">
+				.small-4 .medium-6
+			</div>
+			<div class="background-subtle text-center small-4 medium-6">
+				.small-4 .medium-6
+			</div>
+			<div class="background-neutral text-center text-white small-4 medium-6">
+				.small-4 .medium-6
+			</div>
+			<div class="background-subtle text-center small-3 medium-6 columns">
+				.small-3 .medium-6 .columns
+			</div>
+			<div class="background-neutral text-center text-white small-3 medium-6 columns">
+				.small-3 .medium-6 .columns
+			</div>
+			<div class="background-subtle text-center small-3 medium-6 columns">
+				.small-3 .medium-6 .columns
+			</div>
+			<div class="background-neutral text-center text-white small-3 medium-6 columns">
+				.small-3 .medium-6 .columns
+			</div>
+		</section>
+		<section class="row">
+			<hr>
+			<h1>Type</h1>
 			<div class="small-12 medium-8 medium-offset-2">
 				<h1>Heading 1</h1>
 				<h2>Heading 2</h2>
@@ -16,8 +51,9 @@
 				<a href="">Link</a>
 			</div>
 			<hr>
+			<h1>Buttons</h1>
 			<div class="small-12 medium-8 medium-offset-2">
-				<a href="" class="button alert">Button</a>
+				<a href="" class="button">Button</a>
 				<a href="" class="button error">Error</a>
 				<a href="" class="button warning">Warning</a>
 				<a href="" class="button success">Success</a>
@@ -41,7 +77,20 @@
 				<a href="" class="button full strong">Full Width Strong</a>
 			</div>
 			<hr>
-
+			<h1>Button Groups</h1>
+			<div class="small-12 medium-8 medium-offset-2">
+				<div class="button-group">
+					<a href="" class="button">Button A</a>
+					<a href="" class="button warning">Button B</a>
+					<a href="" class="button success selected">Button C</a>
+				</div>
+				<div class="button-group">
+					<a href="" class="button white">Button A</a>
+					<a href="" class="button white">Button B</a>
+					<a href="" class="button white selected">Button C</a>
+				</div>
+			</div>
+			<hr>
 		</section>
 	</body>
 </html>

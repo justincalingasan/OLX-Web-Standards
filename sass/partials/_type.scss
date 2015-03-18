@@ -10,12 +10,8 @@
 		-webkit-font-smoothing: antialiased;
 	}
 
-	::selection {
-		@extend .background-subtle;
-	}
-
-	::-moz-selection {
-		@extend .background-subtle;
+	::selection, ::-moz-selection {
+		background: #e7e7e7;
 	}
 
 	h1,h2,h3,h4,h5,h6 {
@@ -23,7 +19,7 @@
 		@extend .text-neutral;
 		line-height: 1.25em;
 		font-family: $copy; 
-		font-weight: bold;
+		font-weight: normal;
 		// text-transform: uppercase;
 	}
 
@@ -49,7 +45,7 @@
 		@extend .margin-0;
 		@extend .margin-top-20;
 		@extend .margin-bottom-20;
-		background: #e7e7e7;
+		@extend .background-subtle;
 		height: 1px;
 		border: none;
 	}

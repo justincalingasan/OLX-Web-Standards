@@ -1,6 +1,6 @@
-//Atoms
+// Atoms
 
-//Button
+// Buttons
 button, .button {
 	@include border-radius(3px);
 	@include transition(background, 0.2s);
@@ -11,6 +11,7 @@ button, .button {
 	@extend .display-inline-block;
 	@extend .background-blue;
 	@extend .text-white;
+	cursor: pointer;
 
 	&.small {
 		@extend .padding-top-5;
@@ -70,6 +71,26 @@ button, .button {
 			@extend .background-white;
 			@extend .text-neutral;
 			border: 1px solid $neutral;
+		}
+	}
+}
+
+
+
+
+
+// Button Groups
+
+.button-group {
+	padding: 10px 0;
+	button, .button {
+		@include border-radius(0);
+		margin-right: -6px;
+		&:first-child { @include border-left-radius(3px); }
+		&:last-child { @include border-right-radius(3px); }
+		&.white:hover, &.white:focus {
+			@extend .background-subtle;
+			border-color: $ash;
 		}
 	}
 }
