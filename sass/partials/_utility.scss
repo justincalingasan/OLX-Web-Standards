@@ -73,6 +73,33 @@
 
 
 
+// Borders
+
+.border-platinum,
+.border-subtle		{ border: 1px solid $subtle; }
+
+.border-darkgray,
+.border-neutral		{ border: 1px solid $neutral; }
+
+.border-blue		{ border: 1px solid $blue; }
+
+.border-error,
+.border-red			{ border: 1px solid $red; }
+
+.border-warning,
+.border-orange		{ border: 1px solid $orange; }
+
+.border-purple		{ border: 1px solid $purple; }
+
+.border-success,
+.border-green		{ border: 1px solid $green; }
+
+.border-disabled,
+.border-ash			{ border: 1px solid $ash; }
+
+
+
+
 // Backgrounds
 
 .background-blue 		{ background: $blue; }
@@ -132,6 +159,17 @@
 
 .text-darkgray,
 .text-neutral		{ color: $darkgray; }
+
+
+
+
+
+// Overflow
+
+.overflow-hidden 	{ overflow: hidden; }
+.overflow-scroll-x 	{ overflow-x: scroll; }
+.overflow-scroll-y 	{ overflow-y: scroll; }
+
 
 
 
