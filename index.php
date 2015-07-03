@@ -107,7 +107,7 @@
 			<h1>Search Bar</h1>
 			<div class="small-12">
 				<div class="search-bar clearfix">
-					<div class="search-field small-9 columns">
+					<div class="search-field small-10 columns">
 						<span>&#128270;</span>
 						<input type="text" placeholder="Ano hanap mo?">
 						<div class="dropdown">
@@ -120,8 +120,8 @@
 							</ul>
 						</div>
 					</div>
-					<div class="small-3 columns">
-						<a href="" class="button white full">Search</a>
+					<div class="small-2 columns">
+						<a href="" class="button success full">Search</a>
 					</div>
 				</div>
 			</div>
