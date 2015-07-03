@@ -111,7 +111,7 @@
 						<span>&#128270;</span>
 						<input type="text" placeholder="Ano hanap mo?">
 						<div class="dropdown">
-							<a href="" class="button small dropdown-toggle">in <strong>Current Location</strong> &#9662;</a>
+							<a href="" class="button white small dropdown-toggle"><strong>All Philippines</strong> &#9662;</a>
 							<ul class="dropdown-menu small">
 								<li><a href="" class="active">Current Location</a></li>
 								<li><a href="">Metro Manila</a></li>
@@ -271,6 +271,18 @@
 					</div>
 				</div>
 			</div>
+		</section>
+		<section class="row">
+			<hr>
+			<h1>Icons</h1>
+		</section>
+		<section class="row">
+			<hr>
+			<h1>Navigation</h1>
+		</section>
+		<section class="row">
+			<hr>
+			<h1>Tabs</h1>
 		</section>
 
 		

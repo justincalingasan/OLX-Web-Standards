@@ -50,7 +50,7 @@
 
 .search-bar {
 	@include border-radius(3px);
-	@extend .background-green;
+	@extend .background-blue;
 	@extend .padding-10;
 	input {
 		border: none;
