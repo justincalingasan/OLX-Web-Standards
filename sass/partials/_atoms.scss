@@ -11,6 +11,8 @@ button, .button {
 	@extend .display-inline-block;
 	@extend .background-blue;
 	@extend .text-white;
+	@extend .border-transparent;
+	font-size:16px;
 	cursor: pointer;
 
 	&.small {

@@ -202,17 +202,19 @@
 						<div>
 							<label class="desc" id="title106" for="Field106">Select a Choice</label>
 							<div>
+								<label class="field select-label">
 								<select id="Field106" name="Field106" class="field select medium" tabindex="11"> 
 									<option value="First Choice">First Choice</option>
 									<option value="Second Choice">Second Choice</option>
 									<option value="Third Choice">Third Choice</option>
 								</select>
+								</label>
 							</div>
 						</div>
 						
 						<div>
 							<div>
-								<input id="saveForm" name="saveForm" type="submit" value="Submit">
+								<input id="saveForm" name="saveForm" type="submit" value="Submit" class="button">
 							</div>
 						</div>
 					</form>
