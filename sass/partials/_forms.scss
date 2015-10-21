@@ -16,11 +16,8 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 23px;
-  font-size: (16px * 1.5);
   line-height: inherit;
-  color: $ash;
   border: 0;
-  border-bottom: 1px solid $subtle;
 }
 
 label {
@@ -80,18 +77,71 @@ output {
 }
 
 
-
-
-
 // Form Styles
 
-input, textarea, select {
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea,
+select {
 	@include border-radius(3px);
 	@extend .padding-10;
 	@extend .border-subtle;
+	width: 100%;
 	font-family: $copy;
+	font-size: 16px;
 	&:focus {
-		@include single-box-shadow($green, 0px, 0px, 7px);
+		@include single-box-shadow(0px, 0px, 3px, 0px, $blue);
 		outline: none;
 	}
+}
+
+
+//Field label-input container
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+	float: left;
+	padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+	width: 75%;
+	float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+
+@media (max-width: 600px) {
+form > div {
+	margin: 0 0 15px 0; 
+}
+form > div > label,
+legend {
+	width: 100%;
+	float: none;
+	margin: 0 0 5px 0;
+}
+form > div > div,
+form > div > fieldset > div {
+	width: 100%;
+	float: none;
+}
+}
+@media (min-width: 1200px) {
+form > div > label,
+legend {
+	text-align: right;
+}
 }

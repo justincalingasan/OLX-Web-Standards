@@ -169,7 +169,12 @@
 }
 
 /* line 57, ../sass/partials/_utility.scss */
-.padding-10, .dropdown-menu a, input, textarea, select, figcaption, .card .card-header, .card .card-body, .card .card-actions, .search-bar {
+.padding-10, .dropdown-menu a, input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea,
+select, figcaption, .card .card-header, .card .card-body, .card .card-actions, .search-bar {
   padding: 10px;
 }
 
@@ -241,7 +246,10 @@
 /* line 78, ../sass/partials/_utility.scss */
 .border-platinum,
 .border-subtle,
-input,
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
 textarea,
 select {
   border: 1px solid #e7e7e7;
@@ -2940,14 +2948,11 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 23px;
-  font-size: 24px;
   line-height: inherit;
-  color: #aaa;
   border: 0;
-  border-bottom: 1px solid #e7e7e7;
 }
 
-/* line 26, ../sass/partials/_forms.scss */
+/* line 23, ../sass/partials/_forms.scss */
 label {
   display: inline-block;
   max-width: 100%;
@@ -2955,14 +2960,14 @@ label {
   font-weight: bold;
 }
 
-/* line 34, ../sass/partials/_forms.scss */
+/* line 31, ../sass/partials/_forms.scss */
 input[type="search"] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 39, ../sass/partials/_forms.scss */
+/* line 36, ../sass/partials/_forms.scss */
 input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
@@ -2970,24 +2975,24 @@ input[type="checkbox"] {
   line-height: normal;
 }
 
-/* line 47, ../sass/partials/_forms.scss */
+/* line 44, ../sass/partials/_forms.scss */
 input[type="file"] {
   display: block;
 }
 
-/* line 52, ../sass/partials/_forms.scss */
+/* line 49, ../sass/partials/_forms.scss */
 input[type="range"] {
   display: block;
   width: 100%;
 }
 
-/* line 58, ../sass/partials/_forms.scss */
+/* line 55, ../sass/partials/_forms.scss */
 select[multiple],
 select[size] {
   height: auto;
 }
 
-/* line 64, ../sass/partials/_forms.scss */
+/* line 61, ../sass/partials/_forms.scss */
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
@@ -2996,7 +3001,7 @@ input[type="checkbox"]:focus {
   outline-offset: -2px;
 }
 
-/* line 74, ../sass/partials/_forms.scss */
+/* line 71, ../sass/partials/_forms.scss */
 output {
   display: block;
   padding-top: 11px;
@@ -3005,21 +3010,94 @@ output {
   color: #333333;
 }
 
-/* line 88, ../sass/partials/_forms.scss */
-input, textarea, select {
+/* line 82, ../sass/partials/_forms.scss */
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea,
+select {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  width: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
-/* line 93, ../sass/partials/_forms.scss */
-input:focus, textarea:focus, select:focus {
-  -moz-box-shadow: 0px 0px 7px #aab20a;
-  -webkit-box-shadow: 0px 0px 7px #aab20a;
-  box-shadow: 0px 0px 7px #aab20a;
+/* line 94, ../sass/partials/_forms.scss */
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus,
+select:focus {
+  -moz-box-shadow: 0px 0px 3px 0px #0076be;
+  -webkit-box-shadow: 0px 0px 3px 0px #0076be;
+  box-shadow: 0px 0px 3px 0px #0076be;
   outline: none;
 }
 
+/* line 102, ../sass/partials/_forms.scss */
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+
+/* line 108, ../sass/partials/_forms.scss */
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+
+/* line 111, ../sass/partials/_forms.scss */
+form > div > label,
+legend {
+  width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+
+/* line 117, ../sass/partials/_forms.scss */
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+
+/* line 122, ../sass/partials/_forms.scss */
+form > div > fieldset label {
+  font-size: 90%;
+}
+
+@media (max-width: 600px) {
+  /* line 127, ../sass/partials/_forms.scss */
+  form > div {
+    margin: 0 0 15px 0;
+  }
+
+  /* line 130, ../sass/partials/_forms.scss */
+  form > div > label,
+  legend {
+    width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+
+  /* line 136, ../sass/partials/_forms.scss */
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 143, ../sass/partials/_forms.scss */
+  form > div > label,
+  legend {
+    text-align: right;
+  }
+}
 /* line 3, ../sass/partials/_base.scss */
 * {
   -moz-box-sizing: border-box;
