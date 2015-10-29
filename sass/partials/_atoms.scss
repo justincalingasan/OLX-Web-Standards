@@ -1,5 +1,16 @@
 // Atoms
 
+
+
+
+// Colors
+.colors div{
+	@extend .padding-10;
+	@extend .text-white;
+}
+
+
+
 // Buttons
 button, .button {
 	@include border-radius(3px);

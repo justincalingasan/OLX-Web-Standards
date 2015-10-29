@@ -104,19 +104,32 @@
 // Backgrounds
 
 .background-blue 		{ background: $blue; }
+.background-blue-75		{ background: rgba($blue,.75); }
+.background-blue-50		{ background: rgba($blue,.50); }
+.background-blue-25		{ background: rgba($blue,.25); }
+
 
 .background-red,
 .background-error		{ background: $red; }
 
 .background-orange,
 .background-warning		{ background: $orange; }
+.background-orange-75	{ background: rgba($orange,.75); }
+.background-orange-50	{ background: rgba($orange,.50); }
+.background-orange-25	{ background: rgba($orange,.25); }
 
 .background-green,
 .background-success		{ background: $green; }
+.background-green-75	{ background: rgba($green,.75); }
+.background-green-50	{ background: rgba($green,.50); }
+.background-green-25	{ background: rgba($green,.25); }
 
 .background-yellow 		{ background: $yellow; }
 
 .background-purple 		{ background: $purple; }
+.background-purple-75	{ background: rgba($purple,.75); }
+.background-purple-50	{ background: rgba($purple,.50); }
+.background-purple-25	{ background: rgba($purple,.25); }
 
 .background-white 		{ background: $white; }
 

@@ -28,10 +28,91 @@
 			
 			<!--Main Column-->
 			<div class="small-12 medium-9 columns">
-
+				<section class="row">
+				<h2>Atoms</h2>
+					<a href="#grid" name="grid"></a>
+					<hr>
+					<h3>Colors</h3>
+					<div class="colors color-blue">
+						<div class="background-blue text-center small-3 medium-3 columns">
+							Blue
+						</div>
+						<div class="background-blue-75 text-center small-3 medium-3 columns">
+							75
+						</div>
+						<div class="background-blue-50 text-center small-3 medium-3 columns">
+							50
+						</div>
+						<div class="background-blue-25 text-center small-3 medium-3 columns">
+							25
+						</div>
+					</div>
+					<div class="colors color-purple">
+						<div class="background-purple text-center small-3 medium-3 columns">
+							Purple
+						</div>
+						<div class="background-purple-75 text-center small-3 medium-3 columns">
+							75
+						</div>
+						<div class="background-purple-50 text-center small-3 medium-3 columns">
+							50
+						</div>
+						<div class="background-purple-25 text-center small-3 medium-3 columns">
+							25
+						</div>
+					</div>
+					<div class="colors color-orange">
+						<div class="background-orange text-center small-3 medium-3 columns">
+							Orange
+						</div>
+						<div class="background-orange-75 text-center small-3 medium-3 columns">
+							75
+						</div>
+						<div class="background-orange-50 text-center small-3 medium-3 columns">
+							50
+						</div>
+						<div class="background-orange-25 text-center small-3 medium-3 columns">
+							25
+						</div>
+					</div>
+					<div class="colors color-green">
+						<div class="background-green text-center small-3 medium-3 columns">
+							Green
+						</div>
+						<div class="background-green-75 text-center small-3 medium-3 columns">
+							75
+						</div>
+						<div class="background-green-50 text-center small-3 medium-3 columns">
+							50
+						</div>
+						<div class="background-green-25 text-center small-3 medium-3 columns">
+							25
+						</div>
+					</div>
+				</section>
+				<section class="row">
+					<a href="#type" name="type"></a>
+					<hr>
+					<h3>Type</h3>
+					<div class="small-12 medium-8 medium-offset-2">
+						<h1>Heading 1</h1>
+						<h3>Heading 2</h3>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+						<h5>Heading 5</h5>
+						<h6>Heading 6</h6>
+						<p>Body copy</p>
+						<small>Small</small>
+						<a href="">Link</a>
+					</div>
+						
+				</section>
+				
+				
 				<section class="row">
 					<a href="#grid" name="grid"></a>
-					<h2>Grid</h2>
+					<hr>
+					<h3>Grid</h3>
 					<div class="background-subtle text-center small-12">
 						.small-12
 					</div>
@@ -65,24 +146,11 @@
 				</section>
 				
 				<section class="row">
-					<a href="#type" name="type"></a>
-					<hr>
-					<h2>Type</h2>
-					<div class="small-12 medium-8 medium-offset-2">
-						<h1>Heading 1</h1>
-						<h2>Heading 2</h2>
-						<h3>Heading 3</h3>
-						<h4>Heading 4</h4>
-						<h5>Heading 5</h5>
-						<h6>Heading 6</h6>
-						<p>Body copy</p>
-						<small>Small</small>
-						<a href="">Link</a>
-					</div>
+					
 					
 					<a href="#buttons" name="buttons"></a>
 					<hr>
-					<h2>Buttons</h2>
+					<h3>Buttons</h3>
 					<div class="small-12 medium-8 medium-offset-2">
 						<a href="" class="button">Button</a>
 						<a href="" class="button error">Error</a>
@@ -110,7 +178,7 @@
 					
 					<a href="#btn-grp" name="btn-grp"></a>
 					<hr>
-					<h2>Button Groups</h2>
+					<h3>Button Groups</h3>
 					<div class="small-12 medium-8 medium-offset-2">
 						<div class="button-group">
 							<a href="" class="button">Button A</a>
@@ -126,7 +194,7 @@
 					
 					<a href="#dropdowns" name="dropdowns"></a>
 					<hr>
-					<h2>Dropdowns</h2>
+					<h3>Dropdowns</h3>
 					<div class="small-12 medium-8 medium-offset-2">
 						<div class="dropdown">
 							<a href="" class="button dropdown-toggle">Dropdown &#9662;</a>
@@ -141,7 +209,7 @@
 				<section class="row">
 					<a href="#forms" name="forms"></a>
 					<hr>
-					<h2>Forms</h2>
+					<h3>Forms</h3>
 					<form action="#">
 						<div>
 							<label class="desc" id="title1" for="Field1">Full Name</label>
@@ -221,7 +289,7 @@
 					
 					<a href="#searchbar" name="searchbar"></a>
 					<hr>
-					<h2>Search Bar</h2>
+					<h3>Search Bar</h3>
 					<div class="small-12">
 						<div class="search-bar clearfix">
 							<div class="search-field small-10 columns">
@@ -247,7 +315,7 @@
 				<section class="row">
 					<a href="#contentbox" name="contentbox"></a>
 					<hr>
-					<h2>Content Box</h2>
+					<h3>Content Box</h3>
 					<div class="small-12">
 						<div class="card small-6 medium-4 large-3">
 							<div class="card-header">
@@ -312,7 +380,7 @@
 				<section class="row">
 					<a href="#listing" name="listing"></a>
 					<hr>
-					<h2>Sample Listing Area</h2>
+					<h3>Sample Listing Area</h3>
 					<div class="card small-6 medium-3 large-3">
 						<div>
 							<img src="http://placehold.it/300x200" alt="">
@@ -394,15 +462,15 @@
 				</section>
 				<section class="row">
 					<hr>
-					<h2>Icons</h2>
+					<h3>Icons</h3>
 				</section>
 				<section class="row">
 					<hr>
-					<h2>Navigation</h2>
+					<h3>Navigation</h3>
 				</section>
 				<section class="row">
 					<hr>
-					<h2>Tabs</h2>
+					<h3>Tabs</h3>
 				</section>
 			</div>
 		</div>
