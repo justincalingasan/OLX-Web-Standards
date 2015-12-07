@@ -182,13 +182,18 @@
 					<div class="small-12 medium-8 medium-offset-2">
 						<div class="button-group">
 							<a href="" class="button">Button A</a>
-							<a href="" class="button warning">Button B</a>
-							<a href="" class="button success selected">Button C</a>
+							<a href="" class="button">Button B</a>
+							<a href="" class="button">Button C</a>
 						</div>
 						<div class="button-group">
 							<a href="" class="button white">Button A</a>
 							<a href="" class="button white">Button B</a>
 							<a href="" class="button white selected">Button C</a>
+						</div>
+						<div class="button-group">
+							<a href="" class="button disabled">Button A</a>
+							<a href="" class="button disabled">Button B</a>
+							<a href="" class="button disabled">Button C</a>
 						</div>
 					</div>
 					

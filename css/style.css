@@ -2920,6 +2920,10 @@ button.neutral:hover, button.neutral:focus, .button.neutral:hover, .button.neutr
 button.disabled, .button.disabled {
   cursor: default;
 }
+/* line 76, ../sass/partials/_atoms.scss */
+button.disabled:hover, button.disabled:focus, .button.disabled:hover, .button.disabled:focus {
+  background: #bebebe;
+}
 /* line 79, ../sass/partials/_atoms.scss */
 button.white, .button.white {
   border: 1px solid #aaa;
@@ -2939,8 +2943,9 @@ button.white:hover, button.white:focus, .button.white:hover, .button.white:focus
   -webkit-border-radius: 0;
   border-radius: 0;
   margin-right: -6px;
+  border-color: #fff;
 }
-/* line 102, ../sass/partials/_atoms.scss */
+/* line 103, ../sass/partials/_atoms.scss */
 .button-group button:first-child, .button-group .button:first-child {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -2949,7 +2954,7 @@ button.white:hover, button.white:focus, .button.white:hover, .button.white:focus
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 103, ../sass/partials/_atoms.scss */
+/* line 104, ../sass/partials/_atoms.scss */
 .button-group button:last-child, .button-group .button:last-child {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -2958,17 +2963,21 @@ button.white:hover, button.white:focus, .button.white:hover, .button.white:focus
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 104, ../sass/partials/_atoms.scss */
+/* line 105, ../sass/partials/_atoms.scss */
+.button-group button.white, .button-group .button.white {
+  border-color: #aaa;
+}
+/* line 108, ../sass/partials/_atoms.scss */
 .button-group button.white:hover, .button-group button.white:focus, .button-group .button.white:hover, .button-group .button.white:focus {
   border-color: #aaa;
 }
 
-/* line 117, ../sass/partials/_atoms.scss */
+/* line 121, ../sass/partials/_atoms.scss */
 .dropdown {
   position: relative;
 }
 
-/* line 122, ../sass/partials/_atoms.scss */
+/* line 126, ../sass/partials/_atoms.scss */
 .dropdown-menu {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -2987,15 +2996,15 @@ button.white:hover, button.white:focus, .button.white:hover, .button.white:focus
   min-width: 140px;
   text-align: left;
 }
-/* line 137, ../sass/partials/_atoms.scss */
+/* line 141, ../sass/partials/_atoms.scss */
 .dropdown-menu a {
   border-bottom: 1px solid #e7e7e7;
 }
-/* line 144, ../sass/partials/_atoms.scss */
+/* line 148, ../sass/partials/_atoms.scss */
 .dropdown-menu a.active {
   font-weight: bold;
 }
-/* line 146, ../sass/partials/_atoms.scss */
+/* line 150, ../sass/partials/_atoms.scss */
 .dropdown-menu.small a {
   font-size: 0.8rem;
 }

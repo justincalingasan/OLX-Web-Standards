@@ -73,7 +73,7 @@ button, .button {
 	&.disabled {
 		cursor: default;
 		@extend .background-disabled;
-		// &:hover, &:focus { background: $ash + 20;}
+		&:hover, &:focus { background: $ash + 20;}
 	}
 
 	&.white {
@@ -99,8 +99,12 @@ button, .button {
 	button, .button {
 		@include border-radius(0);
 		margin-right: -6px;
+		border-color: $white;
 		&:first-child { @include border-left-radius(3px); }
 		&:last-child { @include border-right-radius(3px); }
+		&.white{
+			border-color: $ash;
+		}
 		&.white:hover, &.white:focus {
 			@extend .background-subtle;
 			border-color: $ash;
